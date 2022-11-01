@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- CSS property to place div
+            side by side -->
+    <style>
+        #leftbox {
+            float: left;
+            background: #c5c2c2;
+            width: 54%;
+            height: max-content;
+        }
+
+        #middlebox {
+            float: right;
+            /* background: Green; */
+            width: 40%;
+        
+        }
+
+        
+    </style>
+    <style>
+        #leftfox {
+            float: left;
+            background: #cbc9c9;
+            width: 10%;
+            height: max-content;
+        }
+
+        #middlefox {
+            float: right;
+            /* background: Green; */
+            width: 20%;
+
+        }
+    </style>
+    <style>
+        #leftrox {
+            float: left;
+            background: #c5c2c2;
+            width: 10%;
+            height: max-content;
+        }
+
+        #middlerox {
+            float: right;
+            background: #c5c2c2;
+            /* background: Green; */
+            width: 90%;
+
+        }
+    </style>
+    <style>
+        #leftdox {
+            float: left;
+            background: #c5c2c2;
+            width: 80%;
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="foxes">
+        <div id="leftfox">
+            <img src="data:image/png;base64,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"
+            alt="Human Image">
+        </div>
+        <div id="middlefox">
+    
+            <a href="/pr1.html">
+                <h2>
+                    <p style="text-align: right"><u>PROFILE</u></p>
+                </h2>
+            </a>
+        </div>
+    </div>
+    <h1>
+        <p style="text-align:center"><u>CODING CHALLANGES</u></p>
+    </h1>       
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div id="roxes">
+        <div id="leftrox">
+            <h4>Progress:   </h4>
+            <H4>Current Track:  </H4>
+        </div>
+        <div id="middlerox">
+            
+            <br>
+            <textarea id="" cols="70" rows="1" style="background-color: rgb(16, 185, 58); width: 565px; height: 10px;"></textarea>
+            <br>
+            <br>
+            <textarea id="" cols="70" rows="1" style="background-color: rgb(185, 16, 174); width: 565px; height: 10px;"></textarea>
+            <br><br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2>PROBLEM STATEMENT</h2>
+    <div id="boxes">
+        <div id="leftbox">
+            <b>
+                <h2>PROBLEM</h2>
+            </b>
+            Alice likes all the numbers which are divisible by AA. Bob does not like the numbers which are
+            divisible by BB and likes all the remaining numbers.Determine the smallest number greater than or
+            equal to NN which is liked by both Alice and Bob. Output -1 if no such number exists.
+
+            Input Format
+            The first line contains a single integer TT — the number of test cases. Then the test cases follow.
+            The first and only line of each test case contains three space-separated integers A, B and N —
+            the parameters mentioned in the problem statment.
+
+            Output Format
+            For each test case, output the smallest number ≥ N which is divisible by AA and is not divisible by
+            B. Output -1 if no such number exists.
+            </pre>
+            Constraints
+            1. 1≤T≤1000
+            2. 1≤A,B,N≤10<sup>10</sup>
+            <br>
+            <h3>TEST CASES</h3>
+            <pre>
+    Input                          Output
+                
+    3                              15
+    5 2 11                         28    
+    4 3 24                         1
+    7 7 100
+            </pre>
+            <br>
+            <br>
+            <h3>EXPLANATION:</h3>
+            <pre>
+Test case 1: 15 is the smallest number ≥ 11 which is divisible by 5 and is not divisible by 2.
+
+Test case 2: 28 is the smallest number ≥ 24 which is divisible by 4 and is not divisible by 3.
+
+Test case 3: There does not exist any number which is divisible by A = 7 and is not divisible by B = 7.
+            </pre>
+            <br><br><br><br>
+            
+        </div>
+
+        <div id="middlebox">
+            <h2>CODE</h2>
+            <textarea id="" cols="40" rows="10"
+                style="background-color: black; width: 565px; height: 559px;"></textarea>
+            <pre>    
+            <form action="a">
+        <button type="submit">Submit</button>       <button type="submit">Compile & Run</button>
+            </form>
+            </pre>            
+        </div>    
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="doxes">
+        <div id="leftdox">
+            <pre>
+    <a href="#"><u>ABOUT US</u></a>          <a href="#"><u>CONTACT US</u></a>            <a href="#"><u>PRIVACY POLICY</u></a>        
+            </pre>
+        </div>
+    </div>
+</body>
+
+</html>
